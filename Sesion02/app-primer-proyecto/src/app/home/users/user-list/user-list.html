@@ -1,0 +1,8 @@
+<div class="container">
+    <app-user-title [columns]="columns"></app-user-title>
+
+    @for(user of usersActive; track user; let index = $index){
+    <app-user-detail [user]="user" [index]="index" (onDelete)="delete($event)"></app-user-detail>
+    }
+</div>
+

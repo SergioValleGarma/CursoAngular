@@ -1,0 +1,4 @@
+<div class="container">
+    <app-user-list [users]="usersActive" (onDelete)="delete($event)"></app-user-list>
+    <app-user-form (onCreate)="usersActive = [...usersActive, $event]"></app-user-form>
+</div>
