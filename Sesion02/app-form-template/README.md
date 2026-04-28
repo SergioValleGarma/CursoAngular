@@ -83,4 +83,4 @@ ng s -o
 
 ng generate component home/users/user-list
 
-video 2 tiempo 1:50:00
+video 2 tiempo 2:50:00
