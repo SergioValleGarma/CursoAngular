@@ -1,0 +1,9 @@
+@let prd = product();
+@if(prd){
+<div class="product-card">
+    <div class="product-name">{{ prd.name }}</div>
+    <div class="product-price">US$ {{ prd.price }}</div>
+    <div class="product-stock">Stock: {{ prd.stock }}</div>
+    <button class="add-to-cart-btn" (click)="addToCart(prd)" [disabled]="prd.stock === 0">Add to Cart</button>
+</div>
+}

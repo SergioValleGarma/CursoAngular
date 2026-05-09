@@ -1,0 +1,11 @@
+@let it = item();
+@if(it){
+    <div class="cart-item">
+        <div class="item-details">
+            <div class="item-name">{{ it.name }}</div>
+            <div class="item-price">US$ {{ it.price }}</div>
+            <div class="item-quantity">Quantity: {{ it.quantity }}</div>
+        </div>
+        <button class="remove-btn" (click)="removeItem()">Remove</button>
+    </div>
+}
