@@ -1,0 +1,16 @@
+<form>
+    <h1>Credentials</h1>
+    <div class="inputs">
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput type="text" [formField]="authForm.email">
+            <cdev-lib-error-validations [fs]="authForm.email()"></cdev-lib-error-validations>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput type="password"[formField]="authForm.password">
+            <cdev-lib-error-validations [fs]="authForm.password()"></cdev-lib-error-validations>
+        </mat-form-field>
+    </div>
+    <button mat-button type="button" (click)="save()" [disabled]="authForm().invalid()">Login</button>
+</form>

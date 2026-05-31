@@ -1,0 +1,37 @@
+<mat-toolbar>
+    <div class="title">
+        <button matIconButton (click)="toggleMenu()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <h1>{{ title() }}</h1>
+    </div>
+
+    <div class="content">
+        
+        <button matButton [matMenuTriggerFor]="menuApp">
+            <span>Username</span>
+            <mat-icon>keyboard_arrow_down</mat-icon>
+        </button>
+    </div>
+
+</mat-toolbar>
+
+<mat-menu #menuApp="matMenu">
+  <button mat-menu-item>
+    <mat-icon>person</mat-icon>
+    <span>Perfil</span>
+  </button>
+<mat-divider></mat-divider>
+  <button mat-menu-item>
+    <mat-icon>lock</mat-icon>
+    <span>Bloquear session</span>
+  </button>
+<mat-divider></mat-divider>
+    <div class="close">
+        <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Cerrar session</span>
+  </button>
+</div>
+  
+</mat-menu>

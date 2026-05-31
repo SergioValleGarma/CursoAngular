@@ -1,4 +1,4 @@
-# AppPrimerProyecto
+# AppRoutes
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
 
@@ -58,29 +58,4 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
-## codigo comando 
-nvm list available
-nvm list
-node -v
-nvm install 24
-nvm use 24.14.1
-nvm current
-nvm uninstall 22.22.2
-
-npm list
-npm list -g
-npm install --global @angular/cli@<2>
-npm list -g | grep @angular/cli
-
-ng new app-primer-proyecto ---para instalar la ultima version por defecyo
-ng version 
-npx @angular/cli@16.2.16 new app-legado    ---para instalar una version legacy
-ng serve   ---para iniciar el proyecto
-ng s -o --port 4500   ---para correr con puerto designado
-
-# 
-ng s -o
-
-ng generate component home/users/user-list
-
-video 4 tiempo 2:05:00
+video 4 3:00:00
